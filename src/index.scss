@@ -8,19 +8,20 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 13px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to right, #38ef7d, #11998e);
+  background: linear-gradient(to right, #e1b382, #c89666);
   border-radius: 10px;
   height: 150px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to right, #11998e, #38ef7d);
+  background: linear-gradient(to left, #e1b382, #c89666);
+
 }
 
 ::-webkit-scrollbar-track {
-  background: #38ef7d;
+  background: rgba(51, 51, 51, 0.073);
 }
