@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 
-const Form = ({ input, setInput, todos, setTodos, inputRef }) => {
+const Form = ({ input, setInput, todos, setTodos}) => {
   const onInputChange = (event) => {
     setInput(event.target.value);
   };
@@ -12,9 +12,7 @@ const Form = ({ input, setInput, todos, setTodos, inputRef }) => {
   };
 
   
-  // useEffect(() => {
-  //   inputRef.current.focus();
-  // });
+
 
   return (
     <form onSubmit={onFormSubmit}>
@@ -25,7 +23,6 @@ const Form = ({ input, setInput, todos, setTodos, inputRef }) => {
         value={input}
         required
         onChange={onInputChange}
-        ref={inputRef}
       />
       <button className="button-add" type="submit">
         Add
