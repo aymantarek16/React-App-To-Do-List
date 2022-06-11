@@ -1,7 +1,6 @@
-import React from "react";
 import { v4 as uuidv4 } from "uuid";
 
-const Form = ({ input, setInput, todos, setTodos }) => {
+const Form = ({ input, setInput, todos, setTodos, inputRef }) => {
   const onInputChange = (event) => {
     setInput(event.target.value);
   };
@@ -12,6 +11,11 @@ const Form = ({ input, setInput, todos, setTodos }) => {
     setInput("");
   };
 
+  
+  useEffect(() => {
+    inputRef.current.focus();
+  });
+
   return (
     <form onSubmit={onFormSubmit}>
       <input
@@ -21,15 +25,11 @@ const Form = ({ input, setInput, todos, setTodos }) => {
         value={input}
         required
         onChange={onInputChange}
+        ref={inputRef}
       />
       <button className="button-add" type="submit">
         Add
       </button>
-      {todos.map((todo) => (
-        <div key={todo.id}>
-          <h1>{todo.title}</h1>
-        </div>
-      ))}
     </form>
   );
 };
