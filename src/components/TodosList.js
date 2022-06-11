@@ -2,10 +2,10 @@ import React from "react";
 
 const TodosList = ({ todos, setTodos, setEditTodo }) => {
   //   Complate Button
-  const handleComplete = ({ id }) => {
+  const handleComplete = (todo) => {
     setTodos(
       todos.map((item) => {
-        if (item.id === id) {
+        if (item.id === todo.id) {
           return { ...item, completed: !item.completed };
         }
         return item;
