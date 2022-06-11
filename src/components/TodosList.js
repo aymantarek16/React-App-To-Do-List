@@ -3,7 +3,9 @@ import React from 'react'
 const TodosList = ({todos,setTodos}) => {
   return (
     <div>{todos.map((todo)=> (
-        <li className='todo-list' key={todo.id} ></li>
+        <li className='todo-list' key={todo.id} >
+            {todo.title}
+        </li>
     ))}</div>
   )
 }
