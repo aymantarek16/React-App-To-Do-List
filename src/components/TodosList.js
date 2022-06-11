@@ -2,6 +2,15 @@ import React from 'react'
 
 const TodosList = ({todos,setTodos}) => {
 
+    const handleComplete = ({id}) => {
+        setTodos(todos.map(item => {
+            if(item.id === id) {
+                return  {...item , completed: !item.completed}
+            }
+            return item;
+        }
+        ))
+    }
     const handleDelete = (id) => {
         setTodos(todos.filter(todo => todo.id !== id))
     }
@@ -14,7 +23,7 @@ const TodosList = ({todos,setTodos}) => {
             className='list'
             onChange={(event)=> event.preventDefault()}
             />
-            <button className='button-complete task-button'>
+            <button className='button-complete task-button' onClick={()=>handleComplete(todo)}>
                 <i className='fa fa-check-circle'></i>
             </button>
 
