@@ -22,7 +22,7 @@ const TodosList = ({todos,setTodos}) => {
                 <i className='fa fa-edit'></i>
             </button>
 
-            <button className='button-delete task-button' onClick={() => handleDelete(todo)}>
+            <button className='button-delete task-button' onClick={() => handleDelete(todo.id)}>
                 <i className='fa fa-trash'></i>
             </button>
         </li>
