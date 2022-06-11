@@ -12,9 +12,9 @@ const Form = ({ input, setInput, todos, setTodos, inputRef }) => {
   };
 
   
-  useEffect(() => {
-    inputRef.current.focus();
-  });
+  // useEffect(() => {
+  //   inputRef.current.focus();
+  // });
 
   return (
     <form onSubmit={onFormSubmit}>
