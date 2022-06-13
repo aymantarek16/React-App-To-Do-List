@@ -29,15 +29,19 @@ const TodosList = ({ todos, setTodos, setEditTodo }) => {
           <input
             type="text"
             value={todo.title}
-            className="list"
+            className={`list ${todo.completed ? "complete" : ""}`}
             onChange={(event) => event.preventDefault()}
           />
-          
+
           <button
             className="button-complete task-button"
             onClick={() => handleComplete(todo)}
           >
-            <i className="fa fa-check-circle"></i>
+            <i
+              className={`fa ${
+                todo.completed ? "fa-close" : "fa-check-circle"
+              }`}
+            ></i>
           </button>
 
           <button
