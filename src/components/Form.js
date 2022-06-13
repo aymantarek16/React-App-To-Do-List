@@ -29,7 +29,6 @@ const Form = ({ input, setInput, todos, setTodos, editTodo, setEditTodo }) => {
     }
   };
 
-
   return (
     <form onSubmit={onFormSubmit}>
       <input
