@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #30b1cb, #157b8f);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to top, #30b1cb, #157b8f);
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(51, 51, 51, 0.073);
+}
