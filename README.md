@@ -9,10 +9,9 @@ Full Responseve Design
 
 ---
 
-1. Html
-2. Css
-3. js
-4. Local Storage
+1. React.js
+2. Scss
+3. Local Storage
  
 
 ![preview](https://i.imgur.com/UjbHwTZ.jpeg)
