@@ -12,7 +12,7 @@ Full Responseve Design
 1. Html
 2. Css
 3. js
-4- Local Storage
+4. Local Storage
  
 
 ![preview](https://i.imgur.com/UjbHwTZ.jpeg)
