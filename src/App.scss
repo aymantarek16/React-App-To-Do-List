@@ -9,12 +9,13 @@
 
 .app-wrapper {
   background: #12343b;
-  min-width: 450px;
-  min-height: 650px;
+  min-width: 500px;
+  max-height: 650px;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 3px 6px 20px #000;
   margin-bottom: 10px;
+  overflow-y: scroll;
   @media (max-width: 600px) {
     min-width: 50%;
     min-height: 100%;
